@@ -175,7 +175,7 @@ var qrCodeScanner = (function () {
                         drawLine(code.location.topRightCorner, code.location.bottomRightCorner, config.scanFrameColor);
                         drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, config.scanFrameColor);
                         drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, config.scanFrameColor);
-                        if (bStr.length != code.data.length) {
+                        if (bStr != code.data ) {
                             switch (setMode) {
                                 case "1":
                                     try {
